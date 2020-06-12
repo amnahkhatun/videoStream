@@ -14,7 +14,7 @@ class StreamForm extends React.Component {
   renderedInput = ({ input, label, meta }) => {
     return (
       <div className="field">
-        <labe>{label}</labe>
+        <label>{label}</label>
         <input {...input}></input>
         {this.renderError(meta)}
       </div>
@@ -42,7 +42,7 @@ class StreamForm extends React.Component {
           component={this.renderedInput}
           label="Enter Description"
         />
-        <button class="ui button primary" type="submit">
+        <button className="ui button primary" type="submit">
           Submit
         </button>
       </form>
